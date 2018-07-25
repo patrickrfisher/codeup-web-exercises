@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Search</title>
+</head>
+<body>
+<form  method="POST" action="">
+    <label for="type">Property Type </label>
+    <input id="type" name="type" type="search" autofocus >
+    <hr>
+    <label for="foot">Square Footage</label>
+    <input type="number" id="foot" name="footage" min="1" max="10000" >
+    <hr>
+    <label for="minprice">Minimum Price</label>
+    <input type="number" id="minprice" name="minprice" min="$1.00"  >
+    <label for="maxprice">Maximum Price</label>
+    <input type="number" id="maxprice" name="maxprice" max="$10000000.00">
+    <hr>
+    <label for="zipcode">What zipcode?</label>
+    <input type="number" id="zipcode" name="zipcode" min="00000" max="99999">
+    <hr>
+    <label for="bedrooms">Bedrooms</label>
+    <input type="number" id="bedrooms" name="bedrooms" min="0" max="20" data-show-value="true">
+    <label for="bathrooms">Bathrooms</label>
+    <input type="number" id="bathrooms" name="bathrooms" min="0" max="20" data-show-value="true">
+    <button>Search now</button>
+</form>
+</body>
+</html>

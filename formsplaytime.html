@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Create a account!</h1>
+<form method="GET" action="/login">
+    <label for="username">Choose a Username</label>
+    <input type="text" id="username" name="username"/>
+    <hr>
+    <label for="password">Create a Password</label>
+    <input type="text" id="password" name="password"/>
+    <hr>
+    <input type="hidden" value="HeyLook" name="hidden">
+    <hr>
+    <label for="mango">Human?</label>
+    <input type="checkbox" id="mango" checked="Off" name="mango">
+    <select name="color">
+        <option value="white">white</option>
+        <option value="black">black</option>
+        <option value="green">green</option>
+    </select>
+    <hr>
+    <label for="color">Pick a Color</label>
+    <input type="color" id="color" value="color" name="color"/>
+    <hr>
+    <label for="date">Choose todays date</label>
+    <input type="date" id="date" value="07/25/2018" name="07/25/2018">
+    <hr>
+    <label for="number">Pick a Number</label>
+    <input type="number" id="number"  name="guessnumber">
+    <hr>
+    <label for="email">Enter your email</label>
+    <input type="email" id="email" value="personnal" name="email">
+    <hr>
+    <label for="now">What is todays month and year?</label>
+    <input type="month" id="now" value="now" name="now">
+    <hr>
+    <label for="scale">Scale</label>
+    <input type="range" id="scale">
+    <hr>
+    <label for="search">Search</label>
+    <input type="search" id="search">
+    <hr>
+    <label for="tele">Tele</label>
+    <input type="tel" id="tele" value="0000000000 " name="cellphone">
+    <hr>
+    <label for="time">Time</label>
+    <input type="time" id="time" value="24hr" name="digital">
+    <hr>
+    <label for="url">url</label>
+    <input type="url" id="url" value="www.google.com"   name=" redirect">
+    <hr>
+    <input type="week" value="now" name="then">
+    <hr>
+    <input type="radio" value="now" name="how">
+    <hr>
+    <input type="submit" value="submit"/>
+    <button>Submit</button>
+</form>
+    <form method="POST" action="https://request-inspector.glitch.me"/>
+
+
+
+</body>
+</html>

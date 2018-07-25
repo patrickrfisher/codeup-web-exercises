@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us!</title>
+</head>
+<body>
+    <h1>Welcome to Veridian Dynamics registration page! </h1>
+    <section>
+        <h2>Company Vision</h2>
+        <table>
+            <tr>
+                <td><img src="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pic1" width="50" height="50"></td>
+                <td><img src="https://images.pexels.com/photos/533858/pexels-photo-533858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pic2" width="50" height="50"></td>
+            </tr>
+            <tr>
+                <td><img src="https://images.pexels.com/photos/261292/pexels-photo-261292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pic3" width="50" height="50"></td>
+                <td><img src="https://images.pexels.com/photos/1181344/pexels-photo-1181344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pic4" width="50" height="50"></td>
+            </tr>
+        </table>
+    </section>
+    <br>
+        <h2>Please complete the following form to continue.</h2>
+    <hr>
+<form method="POST" action="https://request-inspector.glitch.me">
+    <label for="username"> Choose A Username</label>
+        <input id="username" name="username" type="text">
+    <hr>
+        <label for="email">Enter your Email Address</label>
+        <input type="email" name="emailaddress" id="email">
+    <hr>
+        <label for="password"> Create A Password</label>
+        <input id="password" name="password" type="password">
+    <hr>
+        <label>
+            <textarea rows="3" cols="50">
+                Go ahead and add a personal bio about yourself so we can get to know you!
+            </textarea>
+        </label>
+    <hr>
+        <label >How did you hear about us? </label>
+    <label for="1"><input id="1" type="radio" name="adver" value="Billboard?">Billboard?</label>
+    <label for="2"><input id="2" type="radio" name="adver" value="Radio Advertisement?">Radio Advertisement?</label>
+    <label for="3"><input id="3" type="radio" name="adver" value="Internet Advertisement?">Internet Advertisement?</label>
+    <label for="4"><input id="4" type="radio" name="adver" value="Other?">Other?</label>
+    <hr>
+        <label for="browser">Which web browser do you use?</label>
+            <select name="WebBrowser" id="browser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">FireFox</option>
+                <option value="Safari">Safari</option>
+                <option value="netscape">Netscape</option>
+            </select>
+        <input type="submit">
+</form>
+</body>
+</html>
