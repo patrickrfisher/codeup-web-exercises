@@ -1,0 +1,35 @@
+body, html {
+    background-image: url("../images/spacedesk.jpg");
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 100%;*/
+    background-color: darkslategrey;
+    color: rgba(3, 3, 3, 1);
+    font-family: 'Hanalei Fill', cursive;
+    text-align: center;
+
+}
+h1 {
+    text-decoration: underline;
+    color: salmon;
+}
+
+h2{
+    text-decoration: underline;
+    color: lightsalmon;
+}
+ul, ol {
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+table {
+    padding: 15px 405px 375px;
+    font-size: 1.8em;
+}
+
+
+.newanchor:link    {color: salmon;}
+.newanchor:visited {color: greenyellow;}
+.newanchor:hover   {color:cornflowerblue;}
+.newanchor:active  {color: deeppink;}

@@ -1,0 +1,31 @@
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+
+}
+p {
+    background-color: deepskyblue;
+    color: chartreuse;
+    text-align: center;
+    text-blink: black;
+}
+strong, em {
+    background-color: brown;
+    font-weight: normal;
+}
+em{
+    text-decoration: underline;
+}
+.beginend {
+    background-color:burlywood;
+}
+#superduper {
+    font-size:1.7em;
+}
+body{
+    background-color: darkslategrey;
+    color: azure;
+    font-size: 1.1em;
+}
