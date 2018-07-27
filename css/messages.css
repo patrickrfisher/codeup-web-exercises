@@ -14,16 +14,15 @@ body, html {
     --text-warning:#8b762a;
     --bg-error:#fcd3d7;
     --text-error:#8e243d;
-    }
+    --border-color: #d2d2d2;
+}
 .message {
     margin:8px;
     padding: 10px;
-    /*border radius it can stay because this is consiodered a super class*/
-    border: 0.5px solid;
-    border-radius:7px;
-    border-color:lightgray;
+    /*border radius it can stay because this is consiodered a super class, it also will affect the roundness of the picture itself(remember the ryan profile pic from circle to square)*/
+    border-radius: 7px;
+    border: 0.03125em solid var(--border-color);
 }
-
 .message-info{
     color: var(--text-info);
     background-color: var(--bg-info);
@@ -35,7 +34,6 @@ body, html {
 .message-warning{
     color: var(--text-warning);
     background-color: var(--bg-warning);
-
 }
 .message-error{
     color: var(--text-error);
