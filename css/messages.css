@@ -5,29 +5,39 @@ body, html {
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
+:root{
+    --bg-info: #ccdefc;
+    --text-info:#484198;
+    --bg-success:#ccf3dc;
+    --text-success:#016433;
+    --bg-warning:#fcfbce;
+    --text-warning:#8b762a;
+    --bg-error:#fcd3d7;
+    --text-error:#8e243d;
+    }
 .message {
-    margin:7px;
-    padding: 14px;
+    margin:8px;
+    padding: 10px;
     /*border radius it can stay because this is consiodered a super class*/
-    border: 1px solid;
-    border-radius:10px;
+    border: 0.5px solid;
+    border-radius:7px;
     border-color:lightgray;
 }
 
 .message-info{
-    color: #484198;
-    background-color: #ccdefc;
+    color: var(--text-info);
+    background-color: var(--bg-info);
 }
 .message-success{
-    color: #016433;
-    background-color: #ccf3dc;
+    color: var(--text-success);
+    background-color: var(--bg-success);
 }
 .message-warning{
-    color: #8b762a;
-    background-color: #fcfbce;
+    color: var(--text-warning);
+    background-color: var(--bg-warning);
 
 }
 .message-error{
-    color: #8e243d;
-    background-color: #fcd3d7;
+    color: var(--text-error);
+    background-color: Var(--bg-error);
 }
