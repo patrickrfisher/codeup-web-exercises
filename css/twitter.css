@@ -53,8 +53,8 @@ a {
 }
 
 .profile-image{
-    position:absolute;
-    /*top: 50px;*/
+    position:relative;
+    top: 50px;
 }
 .text-right{
     float:right;
