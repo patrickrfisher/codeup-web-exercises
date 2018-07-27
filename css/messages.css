@@ -14,10 +14,10 @@ body, html {
     --text-warning:#8b762a;
     --bg-error:#fcd3d7;
     --text-error:#8e243d;
-    --border-color: #d2d2d2;
+    --border-color: #d1d1d1;
 }
 .message {
-    margin:8px;
+    margin: 8px;
     padding: 10px;
     /*border radius it can stay because this is consiodered a super class, it also will affect the roundness of the picture itself(remember the ryan profile pic from circle to square)*/
     border-radius: 7px;

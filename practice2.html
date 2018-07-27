@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CSS Test Page</title>
+    <title>Fixed positioning</title>
     <link rel="stylesheet" href="css/practice.css">
+    <style>
+        #container {
+            margin: 50px auto;
+            width: 500px;
+            height: 2000px;
+            border: 1px solid #000;
+            /*position: relative;*/
+        }
+        .box {
+            background-color: #1969B2;
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            /*top is how far from the top same with right how far from the right side etc*/
+            top: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="fancy-header">I've got style!</h1>
+<div id="container">
+    <div class="box"></div>
+</div>
 </body>
 </html>
