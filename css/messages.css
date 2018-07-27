@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message {
+    margin:7px;
+    padding: 14px;
+    /*border radius it can stay because this is consiodered a super class*/
+    border: 1px solid;
+    border-radius:10px;
+    border-color:lightgray;
+}
+
+.message-info{
+    color: #484198;
+    background-color: #ccdefc;
+}
+.message-success{
+    color: #016433;
+    background-color: #ccf3dc;
+}
+.message-warning{
+    color: #8b762a;
+    background-color: #fcfbce;
+
+}
+.message-error{
+    color: #8e243d;
+    background-color: #fcd3d7;
+}
