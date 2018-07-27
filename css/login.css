@@ -65,6 +65,8 @@ fieldset {
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
     width: calc(100% - 4px);
+    /*added in and played with height to see if that would affect the imagfe at all and it does not*/
+    /*height: calc(100% - 4px);*/
 }
 
 .btn {
@@ -82,3 +84,5 @@ fieldset {
     /* This element should use 100% of the width */
     width: 100%;
 }
+    /*height: 100%;*/
+/*}height would not affect anthing here it is in fact would be considered just wunwarranted code*/
