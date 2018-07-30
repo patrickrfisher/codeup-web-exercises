@@ -127,12 +127,12 @@ a {
     border-bottom-style: solid;
     border-bottom-color: var(--separator-color);
     padding: .5em;
-    overflow:auto;
+    overflow:visible;
 
 }
 .media-image{
     width: 50px;
-    float: right;
+    float: left;
     margin-top: 1.33em;
 
 }
@@ -147,4 +147,9 @@ a {
 }
 .profile-items{
     list-style-type:none;
+}
+.li{
+    list-style: none;
+    display: inline-block;
+
 }
