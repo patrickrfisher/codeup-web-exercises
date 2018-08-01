@@ -3,14 +3,121 @@ img {
 
 }
 
+/* Large devices (large desktops, 1200px and up) */
 
+@media screen and (min-width:993px)and (max-width:1280px) {
+    body {
+        background-color: rgba(0, 255, 0, 0);
+        max-width: 1200px;
+        margin: auto;
+        font-family: sans-serif;
+
+    }
+    h1{
+        margin:1em 0;
+        float: left;
+
+    }
+    div.alert-info {
+        display: none;
+    }
+    /* margin-left: 77%; */
+    .nav-links {
+        position: relative;
+        float: right;
+        width: 301px;
+        list-style-type: none;
+        text-align: center;
+        margin: 2.4em 0;
+        padding: 0;
+
+    }
+    li {
+        display:inline-block;
+        margin: 5px;
+        padding: 0;
+        text-align: center;
+
+    }
+
+    .alert-info {
+        position: relative;
+        border: solid 2px #cccccc;
+        background-color: #c9ffff;
+        text-align: center;
+        padding: 15px;
+    }
+    .main{
+        float:left;
+        width: 50%;
+    }
+    .sub-section {
+        width: 50%;
+        position:relative;
+        float: right;
+        font-style: italic;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 401px)and (max-width:992px) {
+    body {
+        background-color: rgba(72, 225, 49, 0);
+        max-width: 992px;
+        margin: auto;
+        font-family: sans-serif;
+        /*max-width:992px;*/
+
+    }
+
+    .nav-links {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    li {
+        background-color: rgba(72, 225, 49, 0);
+        margin-bottom: 10px;
+        padding: 15px;
+        text-align: center;
+
+    }
+
+    .alert-info {
+        position: relative;
+        border: solid 2px #cccccc;
+        background-color: #c9ffff;
+        text-align: center;
+        padding: 15px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .main {
+        float: left;
+        width: 50%;
+
+    }
+
+    .sub-section {
+        width: 50%;
+        float:right;
+        font-style: italic;
+    }
+}
 
 
 
 
 /* Small devices (tablets, 768px and up) */
-@media screen and (max-width:400px) {
+@media screen and (min-width: 295px)and (max-width:400px) {
     body{
+        background-color: rgba(0, 255, 0, 0);
         max-width:400px;
         /*margin:auto;*/
         font-family: sans-serif;
@@ -48,111 +155,19 @@ img {
         text-align: center;
     }
 
-    sec.main {
+    .main {
+        /*width: 50%;*/
+        float:left;
 
     }
 
     .sub-section {
-        font-style: italic;
-    }
-}
-
-
-/* Medium devices (desktops, 992px and up) */
-@media screen and (min-width:992px) {
-    body{
-        max-width: 992px;
-        margin:auto;
-        font-family: sans-serif;
-        /*max-width:992px;*/
-
-    }
-    .nav-links {
-        width: 100%;
-        list-style-type: none;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    li {
-        background-color: #cccccc;
-        margin-bottom: 10px;
-        padding: 15px;
-        text-align: center;
-
-    }
-
-    .alert-info {
-        position: relative;
-        border: solid 2px #cccccc;
-        background-color: #c9ffff;
-        text-align: center;
-        padding: 15px;
-    }
-
-
-    h1 {
-        text-align: center;
-    }
-
-    sec.main {
-
-    }
-
-    .sub-section {
+        /*width: 50%;*/
+        float: right;
         font-style: italic;
     }
 }
 
 
 
-/* Large devices (large desktops, 1200px and up) */
 
-@media screen and (min-width:1200px) {
-    body{
-        max-width:1200px;
-        margin:auto;
-        font-family: sans-serif;
-        /*max-width:1200px;*/
-
-    }
-    .nav-links {
-        width: 100%;
-        list-style-type: none;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    li {
-        background-color: #cccccc;
-        margin-bottom: 10px;
-        padding: 15px;
-        text-align: center;
-
-    }
-
-    .alert-info {
-        position: relative;
-        border: solid 2px #cccccc;
-        background-color: #c9ffff;
-        text-align: center;
-        padding: 15px;
-    }
-
-
-    h1 {
-        text-align: center;
-    }
-
-    sec.main {
-
-    }
-
-    .sub-section {
-        font-style: italic;
-    }
-}
