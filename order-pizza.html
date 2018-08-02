@@ -1,11 +1,12 @@
 <!doctype html5>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>order-pizza-1</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Your custom styles go here -->
@@ -13,7 +14,8 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="#">Pizza world</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -23,10 +25,11 @@
                 <a class="nav-link" href="#">Order online <span class="sr-only">(current)</span></a>
             </li>
             <!--<li class="nav-item">-->
-                <!--<a class="nav-link" href="#">Menu</a>-->
+            <!--<a class="nav-link" href="#">Menu</a>-->
             <!--</li>-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Menu</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Pizza</a>
                     <a class="dropdown-item" href="#">Subs</a>
@@ -38,36 +41,42 @@
                 </div>
             </li>
             <!--<li class="nav-item">-->
-                <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+            <!--<a class="nav-link disabled" href="#">Disabled</a>-->
             <!--</li>-->
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Enter Zipcode" aria-label="Enter Zipcode">
+                <input class="form-control mr-sm-2" type="search" placeholder="Enter Zipcode"
+                       aria-label="Enter Zipcode">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you!</button>
             </form>
         </ul>
-        <span><i class="fas fa-user mr-sm-2"></i>Login</span>
+        <button>
+            <span><i class="fas fa-user mr-sm-2"></i>Login</span>
+        </button>
     </div>
 </nav>
 <div class="container-fluid">
-<div class="jumbotron d-none d-sm-block" style="background-image: url('images/pizza.png')">
-    <!--<img src="images/pizza.png" alt="pizza">-->
-    <h1>Welcome to Pizza World!</h1>
-</div>
+    <div class="jumbotron d-none d-sm-block" style="background-image: url('images/pizza.png')">
+        <!--<img src="images/pizza.png" alt="pizza">-->
+        <h1>Welcome to Pizza World!</h1>
+    </div>
     <h2>Build your own pizza!</h2>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" id="crustmenu-tab" href="#crustmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
+            <a class="nav-link active" id="crustmenu-tab" href="#crustmenu" data-toggle="tab"><span
+                    class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="chzmenu-tab" href="#chzmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
+            <a class="nav-link" id="chzmenu-tab" href="#chzmenu" data-toggle="tab"><span
+                    class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="toppingmenu-tab" href="#toppingmenu" data-toggle="tab"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
+            <a class="nav-link" id="toppingmenu-tab" href="#toppingmenu" data-toggle="tab"><span
+                    class="badge badge-pill badge-secondary">3</span> Toppings</a>
         </li>
     </ul>
     <br>
     <div class="tab-content">
-        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="crustmenu-tab" id="crustmenu" >
+        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="crustmenu-tab" id="crustmenu">
             <div class="card-body">
                 <h5 class="card-title">Choose size and crust</h5>
                 <div class="card">
@@ -75,16 +84,20 @@
                         <h6>Hand Tossed</h6>
                         <p>Garlic seasoned crust with a rich, buttery taste.</p>
                         <ul>
-                            <li><label><input name="crusttype"  value="handtossedsml" type="radio"> Small (10")</label></li>
-                            <li><label><input name="crusttype"  value="handtossedmed" type="radio"> Medium (12")</label></li>
+                            <li><label><input name="crusttype" value="handtossedsml" type="radio"> Small (10")</label>
+                            </li>
+                            <li><label><input name="crusttype" value="handtossedmed" type="radio"> Medium (12")</label>
+                            </li>
                         </ul>
                     </div>
                     <div class="card-body">
                         <h6>Crispy Thin</h6>
                         <p>Thin enough for optimum crispy to crunchy ratio</p>
                         <ul>
-                            <li><label><input name="crusttype"  value="crispthinsml" type="radio"> Small (10")</label></li>
-                            <li><label><input name="crusttype"  value="crispthinmed" type="radio"> Medium (12")</label></li>
+                            <li><label><input name="crusttype" value="crispthinsml" type="radio"> Small (10")</label>
+                            </li>
+                            <li><label><input name="crusttype" value="crispthinmed" type="radio"> Medium (12")</label>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -138,7 +151,8 @@
                             <hr>
                             <li><label><input type="checkbox" id="ham" name="meat[]" value="ham"> Ham</label></li>
                             <hr>
-                            <li><label><input type="checkbox" id="philly" name="meat[]" value="philly"> Philly Steak</label></li>
+                            <li><label><input type="checkbox" id="philly" name="meat[]" value="philly"> Philly
+                                Steak</label></li>
                             <hr>
                             <li><label><input type="checkbox" id="bacon" name="meat[]" value="bacon"> Bacon</label></li>
                         </ul>
@@ -146,13 +160,17 @@
                     <div class="card-body">
                         <h6>Choose Non-Meats</h6>
                         <ul>
-                            <li><label><input type="checkbox" id="grnpepper" name="nonmeat[]" value="grnpepper"> Green Peppers</label></li>
+                            <li><label><input type="checkbox" id="grnpepper" name="nonmeat[]" value="grnpepper"> Green
+                                Peppers</label></li>
                             <hr>
-                            <li><label><input type="checkbox" id="mushroom" name="nonmeat[]" value="mushroom"> Mushrooms</label></li>
+                            <li><label><input type="checkbox" id="mushroom" name="nonmeat[]" value="mushroom"> Mushrooms</label>
+                            </li>
                             <hr>
-                            <li><label><input type="checkbox" id="onion" name="nonmeat[]" value="onion"> Onions</label></li>
+                            <li><label><input type="checkbox" id="onion" name="nonmeat[]" value="onion"> Onions</label>
+                            </li>
                             <hr>
-                            <li><label><input type="checkbox" id="jalapeno" name="nonmeat[]" value="jalapeno"> Jalapeno</label></li>
+                            <li><label><input type="checkbox" id="jalapeno" name="nonmeat[]" value="jalapeno"> Jalapeno</label>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -161,9 +179,16 @@
         </div>
     </div>
 </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4871.216445221419!2d-98.4917639947295!3d29.424582651922673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spizza+by+me!5e0!3m2!1sen!2sus!4v1533238489685" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4871.216445221419!2d-98.4917639947295!3d29.424582651922673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spizza+by+me!5e0!3m2!1sen!2sus!4v1533238489685"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 <!-- Your custom JS goes here -->
 </body>
