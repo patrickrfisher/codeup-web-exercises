@@ -1,0 +1,104 @@
+.jumbotron {
+    background-image: url("images/pizza.png");
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    opacity: 0.6;
+}
+
+main.container {
+    padding: 0;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-title {
+    background-color: #0069D9;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+.card-text {
+    padding: 0 15px;
+}
+
+.card-body>a {
+    margin: 15px;
+}
+
+.card-body .card-body {
+    margin: 15px;
+    border: 1px solid black;
+}
+
+h6 {
+    background-color: #d9d9d9;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.crustbtn {
+    margin: 15px 0;
+    float: right;
+}
+
+a.saucesteps {
+    float: right;
+    margin-left: 0;
+}
+
+.card-body>p {
+    padding-left: 15px;
+}
+
+select {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 96%;
+}
+
+.icon {
+    position: relative;
+    bottom: 1px;
+    height: 20px;
+    width: 20px;
+}
+
+label {
+    margin-left: 15px;
+}
+
+input.form-control {
+    margin-left: 10px;
+}
+
+a.navbar-brand {
+    margin: 0;
+    text-decoration: underline;
+}
+
+a.prevstep {
+    margin-right: 5px;
+}
