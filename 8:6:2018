@@ -1,0 +1,33 @@
+8/6/2018
+
+< doc type html5>
+<language="en">
+<alink ref="stylesheet" filename="css/image.css">
+<Title>Favorite foods</title>
+<head>
+	<h1>Favorite Foods</h1>
+</head>
+<body>
+	<ul>
+		<li>Pizza</li>
+		<li>Ice Cream</li>
+		<li>Pop Corn</li>
+</body>
+
+
+css
+h1{
+	background color:white;
+}
+li{
+	background color:white;
+	}
+
+	use orders
+	use the svg instead of border radius for the small ones
+	12
+	9
+	6
+	5
+	0
+	
