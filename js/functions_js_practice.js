@@ -72,10 +72,10 @@
 
     function isTwo(number){
 
-        var duo= (number==2);
+        var duo = (number === 2);
         return duo;
     }
-
+    console.log(random);
     console.log(isTwo(random));
 
     /**
