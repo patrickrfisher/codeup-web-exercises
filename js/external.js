@@ -1,3 +1,5 @@
+"use strict";
+
 alert("Welcome to my Website!");
 var userInput = prompt("What is your favorite color?");
 alert("Wow my favorite color is also " + userInput);
@@ -55,8 +57,36 @@ var canbeenrolled= !isClassFull && !schedduleconflict;
 
 alert("Can you be enrolled? " + canbeenrolled);
 
+alert("This is for the premium and two items");
+
+var moreThanTwoItems = (prompt("Do you have more then two items")=="yes");
+var offerIsValid = true;
+var isPremiumMember = (prompt)("Are you a premium member?")=="yes";
+var offerCanBeApplied = offerIsValid && (moreThanTwoItems || isPremiumMember);
+
+var isLoggedIn = false;
+var isAdmin = true;
+var isAuthor = false
+var canEditArticle = isLoggedIn && (isAdmin || isAuthor);
 
 
+
+
+var username= prompt("Please enter your desire username");
+var password=prompt("Please enter your desired password");
+
+var passwordIsLongEnough = password.length >= 5;
+var passwordContainsUsername = password.contains(username);
+var usernameIsShortEnough = username.length <= 20;
+var userNameHasWhiteSpace = username.trim() != username;
+var passwordHasWhiteSpace = password.trim() != password;
+var credentialsAreGood = passwordIsLongEnough && !passwordContainsUsername && usernameIsShortEnough && !userNameHasWhiteSpace && !passwordHasWhiteSpace;
+
+if(credentialsAreGood) {
+    console.log("Your acount has been created Check your email for confirmation link");
+} else {
+    console.log("Your username or password must conform to the posted rules ...,");
+}
 
 
 
