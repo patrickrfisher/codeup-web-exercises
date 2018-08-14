@@ -8,7 +8,7 @@
      */
 
 
-    var names = ["Abby", "Becky", "Charlie", "Dougie"];
+    var names = ["First", "Second", "Third", "Fourth", "Fifth"];
 
     /**
      * TODO:
@@ -28,6 +28,7 @@
     console.log(names[1]);
     console.log(names[2]);
     console.log(names[3]);
+    console.log(names[4]);
 
     /**
      * TODO:
@@ -72,9 +73,7 @@
     function last(array) {
         return (array.slice(-1)[0]);
     }
-
-    console.log(last(names));
     console.log(first(names));
     console.log(second(names));
-
+    console.log(last(names));
 })();
