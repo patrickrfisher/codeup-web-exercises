@@ -16,7 +16,7 @@
      * array.
      */
 
-    console.log(names.length);
+    console.log("The number of number's" + names.length);
 
     /**
      * TODO:
@@ -29,6 +29,7 @@
     console.log(names[2]);
     console.log(names[3]);
     console.log(names[4]);
+    console.log("---");
 
     /**
      * TODO:
@@ -38,6 +39,7 @@
 
     for(var i = 0; i < names.length; i++) {
         console.log((names[i]));
+        console.log("---");
     }
 
     /**
@@ -45,8 +47,9 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach(function(element) {
-        console.log(element);
+    names.forEach(function(number) {
+        console.log("This should be in number order " + number + " I hope");
+        console.log("---");
     });
 
     /**
