@@ -4,6 +4,7 @@
     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
 
 
+
     /**
      * TODO:
      * Convert planetsString to an array, and save it in a variable named
@@ -29,5 +30,11 @@
     var newString = planetsArray.join("<br>");
     console.log(newString);
     document.write(newString);
+    document.write("<ul><li>" + planetsArray.join("</li><li>") + "</li> </ul>");
+
+    // var listString = planetsArray.createElement('ul');
+    // console.log(listString);
+
+
 
 })();
