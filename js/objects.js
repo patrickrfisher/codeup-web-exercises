@@ -31,8 +31,8 @@
         }
 
     };
-     console.log(person.firstName);
-     console.log(person.lastName);
+    console.log(persons.firstName);
+    console.log(persons.lastName);
 
 
     /**
@@ -65,7 +65,7 @@
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320},
-        // {name: "Patrick", amount: 297.79},
+        {name: "Patrick", amount: 297.79},
     ];
 
     shoppers.forEach(function (shoppers) {
