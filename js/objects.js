@@ -171,37 +171,37 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-    // var addBook = true;
-    //
-    // while (addBook === true) {
-    //     var con = confirm("Would you like to add a new book?")
-    //     if (con === true) {
-    //         addBook = true;
-    //         var aBookName = prompt("What is the name of the book you want to enter?");
-    //         var aFirstName = prompt("What is the authors first name?");
-    //         var aLastName = prompt("What is the authors last name?");
-    //
-    //         function createBook() {
-    //             return {
-    //                 title: aBookName,
-    //                 author: {
-    //                     firstName: aFirstName,
-    //                     lastName: aLastName
-    //                 }
-    //             };
-    //         }
-    //
-    //         books.push(createBook());
-    //     }
-    //
-    //     else {
-    //         addBook = false;
-    //     }
-    // }
-    // books.forEach(function (book, index) {
-    //     console.log("Book #" + (index + 1));
-    //     console.log("Title: " + book.title);
-    //     console.log("Author: " + book.author.firstName + " " + book.author.lastName);
-    // });
+    var addBook = true;
+
+    while (addBook === true) {
+        var con = confirm("Would you like to add a new book?")
+        if (con === true) {
+            addBook = true;
+            var aBookName = prompt("What is the name of the book you want to enter?");
+            var aFirstName = prompt("What is the authors first name?");
+            var aLastName = prompt("What is the authors last name?");
+
+            function createBook() {
+                return {
+                    title: aBookName,
+                    author: {
+                        firstName: aFirstName,
+                        lastName: aLastName
+                    }
+                };
+            }
+
+            books.push(createBook());
+        }
+
+        else {
+            addBook = false;
+        }
+    }
+    books.forEach(function (book, index) {
+        console.log("Book #" + (index + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    });
 
 })();
