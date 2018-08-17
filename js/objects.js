@@ -78,8 +78,7 @@
             console.log("He needs to spend an additional $" + ((200 - shoppers.amount).toFixed(2)) + " To get the 12% discount.");
         }
     });
-
-
+    
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
