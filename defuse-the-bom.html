@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Defuse the BOM</title>
+</head>
+<body background="images/daleks.jpeg">
+
+<h2 id="message" style="color:#e1dc10">THE DALEKS ARE WILL BE HERE IN <span id="timer">500</span>  SECONDS...</h2>
+<button id="doctor">CALL THE DOCTOR</button>
+
+<script>
+(function() {
+    "use strict";
+    var interval = 1000;
+    var daleksArrive = 10;
+
+    // TODO: This function needs to be called once every second
+   var intervalId= setInterval(
+    function updateTimer() {
+        if (daleksArrive == 0) {
+            alert('EXTERMINATE!');
+            document.body.innerHTML = '';
+        } else if (daleksArrive > 0) {
+            document.getElementById('timer').innerHTML = daleksArrive;
+        }
+
+        daleksArrive--;
+    }, interval);
+
+    // TODO: When this function runs, it needs to
+    // cancel the interval/timeout for updateTimer()
+    function defuseTheBOM() {
+        clearInterval(intervalId)
+    }
+
+    // Don't modify anything below this line!
+    //
+    // This causes the defuseTheBOM() function to be called
+    // when the "defuser" button is clicked.
+    // We will learn about events in the DOM lessons
+    var doctor = document.getElementById('doctor');
+    doctor.addEventListener('click', defuseTheBOM);
+})();
+</script>
+</body>
+</html>
