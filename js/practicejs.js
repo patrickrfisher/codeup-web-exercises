@@ -1,207 +1,72 @@
-(function() {
-    "use strict";
-
-    /**
-     * TODO:
-     * Create an object with firstName and lastName properties that are strings
-     * with your first and last name. Store this object in a variable named
-     * `person`.
-     *
-     * Example:
-     *  > console.log(person.firstName) // "Rick"
-     *  > console.log(person.lastName) // "Sanchez"
-     */
-
-    var person = {
-        firstName: "Patrick",
-        lastName: "Fisher",
-        sayHello: function () {
-            return ("Hello from " + this.firstName + " " + this.lastName + "!!!")
-        }
-    };
-
-    console.log(person.firstName);
-    console.log(person.lastName);
-
-    var persons = {
-        firstName:"Patrick",
-        lastName:"Fisher",
-        sayHello: function () {
-            return("Hello patrick or do I say" + this.firstName + " " + this.lastName + "capital or no")
-        }
-
-    };
-     console.log(person.firstName);
-     console.log(person.lastName);
-
-
-    /**
-     * TODO:
-     * Add a sayHello method to the person object that returns a greeting using
-     * the firstName and lastName properties.
-     * console.log the returned message to check your work
-     *
-     * Example
-     * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
-     */
-
-    console.log(person.sayHello());
-
-    /** TODO:
-     * HEB has an offer for the shoppers that buy products amounting to
-     * more than $200. If a shopper spends more than $200, they get a 12%
-     * discount. Write a JS program, using conditionals, that logs to the
-     * browser, how much Ryan, Cameron and George need to pay. We know that
-     * Cameron bought $180, Ryan $250 and George $320. Your program will have to
-     * display a line with the name of the person, the amount before the
-     * discount, the discount, if any, and the amount after the discount.
-     *
-     * Uncomment the lines below to create an array of objects where each object
-     * represents one shopper. Use a foreach loop to iterate through the array,
-     * and console.log the relevant messages for each person
-     */
-
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320},
-        // {name: "Patrick", amount: 297.79},
-    ];
-
-    shoppers.forEach(function (shoppers) {
-        console.log(shoppers.name + " Spent $" + shoppers.amount.toFixed(2));
-        if (shoppers.amount >= 200) {
-            var discount = (shoppers.amount * .12);
-            console.log("He  qualifies for a 12% discount of $" + (discount.toFixed(2)) +
-                ".  His total is now $" + ((shoppers.amount*.88).toFixed(2)));
-        } else {
-            console.log("He needs to spend an additional $" + ((200 - shoppers.amount).toFixed(2)) + " To get the 12% discount.");
-        }
-    });
-
-
-    /** TODO:
-     * Create an array of objects that represent books and store it in a
-     * variable named `books`. Each object should have a title and an author
-     * property. The author property should be an object with properties
-     * `firstName` and `lastName`. Be creative and add at least 5 books to the
-     * array
-     *
-     * Example:
-     * > console.log(books[0].title) // "The Salmon of Doubt"
-     * > console.log(books[0].author.firstName) // "Douglas"
-     * > console.log(books[0].author.lastName) // "Adams"
-     */
-
-    var books = [
-        {
-            title: "Sabriel",
-            author: {
-                firstName: "Garth",
-                lastName: "Nix"
-            }
-        },
-        {
-            title: "The Saga of Darren Shan",
-            author: {
-                firstName: "Darren",
-                lastName: "Shan"
-            }
-        },
-        {
-            title: "The Demonata",
-            author: {
-                firstName: "Darren",
-                lastName: "Shan"
-            }
-        },
-        {
-            title: "The Giver",
-            author: {
-                firstName: "Lois",
-                lastName: "Lowry"
-            }
-        },
-        {
-            title: "It",
-            author: {
-                firstName: "Stephen",
-                lastName: "King"
-            }
-        },
-
-    ];
-
-    /**
-     * TODO:
-     * Loop through the books array and output the following information about
-     * each book:
-     * - the book number (use the index of the book in the array)
-     * - the book title
-     * - author's full name (first name + last name)
-     *
-     * Example Console Output:
-     *
-     *      Book # 1
-     *      Title: The Salmon of Doubt
-     *      Author: Douglas Adams
-     *      ---
-     *      Book # 2
-     *      Title: Walkaway
-     *      Author: Cory Doctorow
-     *      ---
-     *      Book # 3
-     *      Title: A Brief History of Time
-     *      Author: Stephen Hawking
-     *      ---
-     *      ...
-     */
-    books.forEach(function(book, index) {
-        console.log("Book #" + (index +1));
-        console.log("Title: " + book.title);
-        console.log("Author: " + book.author.firstName +" "+ book.author.lastName);
-    });
-    /**
-     * Bonus:
-     * - Create a function named `createBook` that accepts a title and author
-     *   name and returns a book object with the properties described
-     *   previously. Refactor your code that creates the books array to instead
-     *   use your function.
-     * - Create a function named `showBookInfo` that accepts a book object and
-     *   outputs the information described above. Refactor your loop to use your
-     *   `showBookInfo` function.
-     */
-    // var addBook = true;
-    //
-    // while (addBook === true) {
-    //     var con = confirm("Would you like to add a new book?")
-    //     if (con === true) {
-    //         addBook = true;
-    //         var aBookName = prompt("What is the name of the book you want to enter?");
-    //         var aFirstName = prompt("What is the authors first name?");
-    //         var aLastName = prompt("What is the authors last name?");
-    //
-    //         function createBook() {
-    //             return {
-    //                 title: aBookName,
-    //                 author: {
-    //                     firstName: aFirstName,
-    //                     lastName: aLastName
-    //                 }
-    //             };
-    //         }
-    //
-    //         books.push(createBook());
-    //     }
-    //
-    //     else {
-    //         addBook = false;
-    //     }
-    // }
-    // books.forEach(function (book, index) {
-    //     console.log("Book #" + (index + 1));
-    //     console.log("Title: " + book.title);
-    //     console.log("Author: " + book.author.firstName + " " + book.author.lastName);
-    // });
-
-})();
+//todo create a function to loop multiply 7,
+// in this function it will need to use a loop
+// and maybe a conditional
+//
+//
+//     function multiply(x,y) {
+//     var product = x;
+//         for (var i =1; i<y;i++){
+//                 product = product +=x;
+//                 }
+//             return product;
+//     }
+//
+//
+//     function exponentiate(x,y) {
+//     var product = 1;
+//     for (var i =0; i<y;i++){
+//         product = product *=x;
+//     }
+//     return product;
+// }
+//
+// var calculatePi = function(){
+//     var pi;
+//
+//     pi = Math.PI;
+//         return pi;
+// }
+// console.log(calculatePi());
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <meta charset="utf-8">
+//     <title>Defuse the BOM</title>
+// </head>
+// <body>
+//
+// <h2 id="message">This BOM will self destruct in <span id="timer">5</span> seconds...</h2>
+// <button id="defuser">Defuse the BOM</button>
+//
+// <script>
+// (function() {
+//     "use strict";
+//     var interval = 1000;
+//     var detonationTimer = 5;
+//     // TODO: This function needs to be called once every second
+//     var intervalId = setInterval(
+//         function updateTimer() {
+//             if (detonationTimer === 0) {
+//                 alert('EXTERMINATE!');
+//                 document.body.innerHTML = '';
+//             } else if (detonationTimer > 0) {
+//                 document.getElementById('timer').innerHTML = detonationTimer;
+//             }
+//             detonationTimer--;
+//         }, interval);
+//     // TODO: When this function runs, it needs to
+//     // cancel the interval/timeout for updateTimer()
+//     function defuseTheBOM() {
+//         clearInterval(intervalId);
+//     }
+//     // Don't modify anything below this line!
+//     //
+//     // This causes the defuseTheBOM() function to be called
+//     // when the "defuser" button is clicked.
+//     // We will learn about events in the DOM lessons
+//     var defuser = document.getElementById('defuser');
+//     defuser.addEventListener('click', defuseTheBOM);
+// })();
+// </script>
+// </body>
+</html>
