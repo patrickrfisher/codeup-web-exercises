@@ -1,97 +1,134 @@
 "use strict";
 
-alert("Welcome to my Website!");
-var userInput = prompt("What is your favorite color?");
-alert("Wow my favorite color is also " + userInput);
-console.log('color choice: '+ userInput);
-console.log("Hello from external JavaScript")
-
-alert("This is going to be the movie libary");
+// take in five numbers and return it from highest to lowest also using the parseFloat() to make sure you can use decimals
 
 
-var firstmovie=prompt("Which movie have you chosen?");
-var firstime=Number(prompt("How many days "));
 
-var secondmovie=prompt("If you rented more then one would you name it?");
-var secondtime=Number(prompt("How many days "));
-
-var thirdmovie=(prompt("If you rented more then two will you name it?"));
-var thirdtime=Number(prompt("How many days "));
-
-var total=(firstime+secondtime+thirdtime)*3;
-
-
-alert("The total amount due is $ " + total+".00! \n You have rented:\n 1. " + firstmovie+"\n 2. "+secondmovie+"\n 3. "+thirdmovie);
+// var sort = function(a,b,c,d,e){
+//     var highest = [parseFloat(a),parseFloat(b),parseFloat(c),parseFloat(d),parseFloat(e)];
+//         highest = highest.sort( function(a,b){
+//                 return b-a});
+//     return highest;
+//             };
+// console.log(sort(1,2,3,4,5));
 
 
 
 
-alert("Here you have the pay system that will ask for your hourly wage and the hours worked per employer and then give you your weekly salary")
+// write a function to check two given numbers and return true if one of the numbers is 80 or it their sum is 80; if not return false
+
+// function eighty(a,b){
+//     if((a===80)||(b===80)){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(eighty(40,20));
 
 
-var googlepayent=parseFloat(prompt("Enter hourly payment for Google(usually is $400.00)"));
-var googletime=parseFloat(prompt("How many hours did you worked"));
-
-var amazonpayment=parseFloat(prompt("Enter hourly payment for Amazon(usually is $380.00"));
-var amazontime=parseFloat(prompt("How many hours did you worked"));
-
-var facebookpayment=parseFloat(prompt("Enter hourly payment for Facebook(usually is $350.00)"));
-var facebooktime=parseFloat(prompt("How many hours did you worked"));
-
-
-var weeklysalary=(googletime*googlepayent)+(facebooktime*facebookpayment)+(amazonpayment*amazontime);
-
-
-alert("Your weekly pay check is: "+ weeklysalary);
-
-
-
-alert("Can you be enrolled?");
-
-var  isClassFull=(prompt("Is the class full?")=="yes");
-
-var  schedduleconflict=(prompt("Does the schedule conflict with your school schedule?")=="yes");
-
-var canbeenrolled= !isClassFull && !schedduleconflict;
+// write a function  that takes in a string,
+//     returns a string with "py" in front
+// if already starts with "py" return original string
+// var pyadder = function (str, test){
+//     test = test.toLowerCase();
+//     str = str.toLowerCase();
+//     if (str.substring(0,2)===test){
+//         return str;
+//     }
+//
+//         else {
+//         str=test+str;
+//         return str;
+//     }
+//
+// };
+//
+//
+// console.log(pyadder('Romania', "super"));
 
 
-alert("Can you be enrolled? " + canbeenrolled);
+// takes in single input
+//if not a string, return false
+//if is a string, return true
+//if contains vowels [a,e,i,o,u](no y) return true
+//else return false
 
-alert("This is for the premium and two items");
+// objects arrays and strings basic jvs and git for the assesment tomorrow
 
-var moreThanTwoItems = (prompt("Do you have more then two items")=="yes");
-var offerIsValid = true;
-var isPremiumMember = (prompt)("Are you a premium member?")=="yes";
-var offerCanBeApplied = offerIsValid && (moreThanTwoItems || isPremiumMember);
+// ------------------------------------
+// push ups 8/23
 
-var isLoggedIn = false;
-var isAdmin = true;
-var isAuthor = false
-var canEditArticle = isLoggedIn && (isAdmin || isAuthor);
+// fact data that uniquely identifies a person
+//
+// let name = [
+//     {
+//         name: "Daniel Fryar",
+//         hairColor: "brown",
+//         eyeColor: "brown",
+//         birthDay: {
+//             month: 8,
+//             day: 21,
+//         }
+//     },
+//     {
+//         name: "Patrick Fisher",
+//         hairColor: "brownish",
+//         eyeColor: "brownish",
+//         birthDay: {
+//             month: 2,
+//             day: 25,
+//         }
+//     },
+//     {
+//         name: "fisherp",
+//         hairColor: "blonde",
+//         eyeColor: "blonde",
+//         birthDay: {
+//             month: 8,
+//             day: 21,
+//         }
+//     },
+// ];
+// name.forEach(function(name,index){
+//     console.log("name #"+(index +1));
+//     console.log("haircolor"+name.name);
+//     console.log("eyecolor"+name.eyeColor);
+//     console.log("birthday"+name.birthDay.month+""+name.birthDay.day);
+// });
+//
+// me.juggle=function(){
+//     console.log("hey look at me juggle!");
+// }
+//
+//
+//
+// var students =[];
+// students.push(me);
+// students.push(cole);
+// students[0].juggle()
 
+//make three students
+//add info to yourself that makes you more unique
+//add a method or two onto the function
+//
+// pushups daniel version
+//-------
+var superman ={
+    name:"Superman",
+    secretIdentity:{
+        name:"Clark Kent",
+        occupation:"reporter for the dailey planet"
+    },
+    hairColor:"black",
+    eyeColor:"blue(with lazers and x-ray)",
+    superPower: function(){
+        console.log("Hey look at me I am juggeling");
+        },
+    sleep.function(){
 
+    }
+};
 
+var wonderwoman = {}
 
-var username= prompt("Please enter your desire username");
-var password=prompt("Please enter your desired password");
-
-var passwordIsLongEnough = password.length >= 5;
-var passwordContainsUsername = password.contains(username);
-var usernameIsShortEnough = username.length <= 20;
-var userNameHasWhiteSpace = username.trim() != username;
-var passwordHasWhiteSpace = password.trim() != password;
-var credentialsAreGood = passwordIsLongEnough && !passwordContainsUsername && usernameIsShortEnough && !userNameHasWhiteSpace && !passwordHasWhiteSpace;
-
-if(credentialsAreGood) {
-    console.log("Your acount has been created Check your email for confirmation link");
-} else {
-    console.log("Your username or password must conform to the posted rules ...,");
-}
-
-
-
-// Complete exercise 3 from the previous lesson, but write your code
-//     in the external.js file instead of in the console.
-//     When the exercise asks you to use a number, instead use a prompt
-//     to ask the user for that number.
-//     Use an alert to show the results of each problem.
