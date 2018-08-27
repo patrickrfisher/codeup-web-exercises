@@ -114,65 +114,71 @@
 //
 // pushups daniel version
 //-------
-var superman ={
-    name:"Superman",
-    secretIdentity:{
-        name:"Clark Kent",
-        occupation:"reporter for the dailey planet"
-    },
-    hairColor:"black",
-    eyeColor:"blue(with lazers and x-ray)",
-    superPower: function(){
-        console.log("Hey look at me I am juggeling");
-        },
-    sleep.function(){
-
-    }
-};
-
-var wonderwoman = {}
-
-
-
-
-//daniels version
-var superman = {
-    name : “Superman”,
-secretIdentity: {
-    name: “Clark Kent”,
-    occupation: “reporter for Daily Planet”
-},
-hairColor: “black”,
-eyeColor: “blue(with lazers and x-ray)“,
-superPower: function() {
-    console.log(“Hey look at me I’m juggling”);
-},
-sleep: function() {
-
-}
-};
-
-var wonderwoman = {
-    name: “Wonder Woman”,
-secretIdentity: {
-    name: “Diana Prince”,
-    occupation: “museum curator”,
-},
-hairColor: “black”,
-eyeColor: “blue, I assume”,
-superPower: function() {
-    console.log(“She can fly, and she also has an invisible jet, so is she flying it or is it flying her??“);
-},
-};
-
-var superTeam = [];
-superTeam.push(superman);
-superTeam.push(wonderwoman);
-superTeam.forEach(function(member){
-    member.superPower();
-});
+// var superman ={
+//     name:"Superman",
+//     secretIdentity:{
+//         name:"Clark Kent",
+//         occupation:"reporter for the dailey planet"
+//     },
+//     hairColor:"black",
+//     eyeColor:"blue(with lazers and x-ray)",
+//     superPower: function(){
+//         console.log("Hey look at me I am juggeling");
+//         },
+//     sleep.function(){
+//
+//     }
+// };
+//
+// var wonderwoman = {}
+//
+//
+//
+//
+// //daniels version
+// var superman = {
+//     name : “Superman”,
+// secretIdentity: {
+//     name: “Clark Kent”,
+//     occupation: “reporter for Daily Planet”
+// },
+// hairColor: “black”,
+// eyeColor: “blue(with lazers and x-ray)“,
+// superPower: function() {
+//     console.log(“Hey look at me I’m juggling”);
+// },
+// sleep: function() {
+//
+// }
+// };
+//
+// var wonderwoman = {
+//     name: “Wonder Woman”,
+// secretIdentity: {
+//     name: “Diana Prince”,
+//     occupation: “museum curator”,
+// },
+// hairColor: “black”,
+// eyeColor: “blue, I assume”,
+// superPower: function() {
+//     console.log(“She can fly, and she also has an invisible jet, so is she flying it or is it flying her??“);
+// },
+// };
+//
+// var superTeam = [];
+// superTeam.push(superman);
+// superTeam.push(wonderwoman);
+// superTeam.forEach(function(member){
+//     member.superPower();
+// });
 
 
 
 // each degree is about sixty miles
 
+
+//
+// var daysOfTheWeek = ['Monday', 'Tuesday', "Wednesday","Thursday"];
+// console.log(daysOfTheWeek);
+// //Adds to the start of the array
+// daysOfTheWeek.push("Friday");
