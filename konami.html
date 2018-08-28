@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>Konami Code</h1>
+<!--<p>Please enter a code</p>-->
+<!--<form>-->
+<!--<input type="text" id="textfield" name="textfield" placeholder="Enter Code Here">-->
+<!--</form>-->
+<!--<script src="js/jquery-2.2.4.js"></script>-->
+<script>
+    "use strict";
+    var url = "Flavortown-2033-js-game-master/flavortown.html";
+    var userCode = [];
+    const theCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+    $(document).keydown(function(event){
+        userCode.push(event.keyCode);
+        if (userCode.toString() === theCode.toString()) {
+            alert ("LETS PLAY!");
+            $(location).attr('href',url);
+            userCode=[];
+        }
+        if(userCode.toString().length===(theCode.toString().length)) {
+            userCode = [];
+        }
+    });
+</script>
+</body>
