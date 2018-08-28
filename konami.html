@@ -23,7 +23,7 @@
     $(document).keydown(function(event){
         userCode.push(event.keyCode);
         if (userCode.toString() === theCode.toString()) {
-            alert ("LETS PLAY!");
+            alert ("Watch out! Stephen is coming!");
             $(location).attr('href',url);
             userCode=[];
         }
