@@ -10,15 +10,10 @@
 </head>
 <body>
 <h1>Konami Code</h1>
-<!--<p>Please enter a code</p>-->
-<!--<form>-->
-<!--<input type="text" id="textfield" name="textfield" placeholder="Enter Code Here">-->
-<!--</form>-->
-<!--<script src="js/jquery-2.2.4.js"></script>-->
 <script>
     "use strict";
-    var url = "Flavortown-2033-js-game-master/flavortown.html";
-    var userCode = [];
+    let url = "Flavortown-2033-js-game-master/flavortown.html";
+    let userCode = [];
     const theCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
     $(document).keydown(function(event){
         userCode.push(event.keyCode);
