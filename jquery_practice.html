@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
 </head>
 <body>
-<h2 align="center">Wanna register for the site?!?!</h2>
+<h2 align="center">You should register and donate</h2>
 
 <h1 align="center">National Parks FAQ</h1>
 <dl>
@@ -34,7 +37,7 @@
     <dt>What is the National Park Service budget?</dt>
     <dd class="invisible">FY 2017 Enacted: $2.932 billion</dd>
 </dl>
-<button class="yellowUp">I make last li's yellow</button>
+<button class="change">I make last li's yellow</button>
 
 <h3 id="national-parks-heading">National Parks</h3>
 <ul id="national-parks">
@@ -62,12 +65,10 @@
 </ul>
 <script>
     $('dt').click (function () {
-        // event.preventDefault();
-        $(this).next().toggleClass('invisible').css('background-color', '#40E0D0');
+        $(this).next().toggleClass('invisible').css('background-color', 'salmon');
     });
-    $('.yellowUp').click(function(){
+    $('.change').click(function(){
         $('ul').each(function () {
-            // console.log($(this));
             $(this).children().last().css('background-color', 'yellow');
         });
     });
@@ -83,7 +84,6 @@
     $('ul').hide();
     $('h2').hide();
     setTimeout(function () {
-        // console.log("I'm Faded");
         $('h2').fadeIn(8000);
     }, 8000)
 </script>
