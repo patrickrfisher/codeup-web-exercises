@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stephen needs to speak to you!</title>
+    <link rel="icon" href="src/guy.png">
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="game">
+      <div id="overlay">
+          <div id="logo"></div>
+          <h1>
+              <a href="javascript:start()" class="start_screen_links" id="start" >
+                START
+              </a>
+          </h1>
+
+          <h5>
+            <a href="javascript:toggleTopScores()" class="start_screen_links" id="top_scores_link">
+              TOP SCORES
+            </a>
+          </h5>
+
+          <h5>
+            <a href="javascript:toggleInstructions()" class="start_screen_links" id="instructions_link">
+              INSTRUCTIONS
+            </a>
+          </h5>
+
+          </h3>
+
+          <table id='high-scores'>
+            <tr>
+              <th>| Name      |</th>
+              <th>|     Score |</th>
+            </tr>
+          </table>
+      </div> <!-- END #overlay -->
+
+      <div class="pauseBtn" id="pause"  data-pause="pauseGame">
+
+      </div>
+
+      <div id="score">SCORE: <span id="scorenumber">0</span></div>
+
+      <div id="dodger" style="top:580px;"></div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div id="modal-content" class="modal-content">
+          <img class="close"src="src/sorry-not-sorry.jpg" alt="">
+          <p>You Lose. Welcome to Failure!.</p>
+          <p id="score-text">Submit Your Name to the Leaderboard:</p>
+          <form id="score-form" class="score-form" action="index.html" method="post">
+            <center>
+              <input id=
+              "score-input" type="text" name="name" value="">
+              <button type="submit">Submit Score</button>
+            </center>
+          </form>
+          <center>
+            <button id="playAgain" type="button" style="display:none;" name="button">Play Again?</button>
+          </center>
+        </div>
+      </div>
+
+      <div id="instructions">
+        <div class="instruction-cell">This is you:<br>
+          <img class="thumb" src="src/ship.png" alt="Ship"></div>
+        <div class="instruction-cell">You move with these:<br>
+          <img class="thumb" src="src/arrow_keys.png" alt="Up/Down Arrow Keys"></div>
+        <div class="instruction-cell">Avoid Stephen!:<br>
+          <img class="thumb" src="src/guy.png" alt="Avoid Fieri"></div>
+        <div class="clear"></div>
+      </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
