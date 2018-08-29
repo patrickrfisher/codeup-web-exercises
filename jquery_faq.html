@@ -11,13 +11,13 @@
 
 <h1 align="center">Funny National Parks FAQ's</h1>
 <dl>
-    <dt>question1</dt>
-    <dd class="invisible">1</dd>
-    <dt>q2</dt>
-    <dd class="invisible">2</dd>
-    <dt>q3</dt>
-    <dd class="invisible">3</dd>
-    <dt>q4</dt>
+    <dt>The National Parks set aside land for everyone that accumulates to about..</dt>
+    <dd class="invisible">51 Million acres! The rough size of Kansas</dd>
+    <dt>The world's first national park was Yellowstone!</dt>
+    <dd class="invisible">Yellowstone was created by President grant in 1872, its caretakers were also the cavalry!</dd>
+    <dt>The first cave to be named a national park in the world is the Wind Cave National Park</dt>
+    <dd class="invisible">6th longest known cave in the world, also famous for "boxwork" calcite formations!</dd>
+    <dt>The smallest naitonal park</dt>
     <dd class="invisible">4</dd>
     <dt>q5</dt>
     <dd class="invisible">5</dd>
@@ -32,7 +32,7 @@
     <dt>q10</dt>
     <dd class="invisible">10</dd>
 </dl>
-<button class="change">yellowli</button>
+<button>yellowli</button>
 
 <h3 id="national-parks-heading">parks1</h3>
 <ul id="national-parks">
@@ -50,6 +50,7 @@
     <li>k</li>
     <li>s</li>
 </ul>
+<section>
 <h3>parks3</h3>
 <ul id="state-parks-newMexico">
     <li>p</li>
@@ -58,13 +59,14 @@
     <li>k</li>
     <li>s</li>
 </ul>
+</section>
 <script>
     $('dt').click(function () {
         $(this).next().toggleClass('invisible').css('background-color', 'salmon');
     });
-    $('.change').click(function () {
-        $('ul').each(function () {
-            $(this).children().last().css('background-color', 'yellow');
+    $("button").click(function (event) {
+        $("ul").each(function (index,element) {
+            $(element).children().last().toggleClass("highLight");
         });
     });
     $('h3').click(function () {
