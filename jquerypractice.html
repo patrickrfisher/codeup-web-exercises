@@ -4,83 +4,10 @@
     <meta charset="UTF-8">
     <title>Practice with JQ</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<h2 align="center">You should register and donate</h2>
 
-<h1 align="center">Funny National Parks FAQ's</h1>
-<dl>
-    <dt>question1</dt>
-    <dd class="invisible">1</dd>
-    <dt>q2</dt>
-    <dd class="invisible">2</dd>
-    <dt>q3</dt>
-    <dd class="invisible">3</dd>
-    <dt>q4</dt>
-    <dd class="invisible">4</dd>
-    <dt>q5</dt>
-    <dd class="invisible">5</dd>
-    <dt>q6</dt>
-    <dd class="invisible">6</dd>
-    <dt>q7</dt>
-    <dd class="invisible">7</dd>
-    <dt>q8</dt>
-    <dd class="invisible">8</dd>
-    <dt>q9</dt>
-    <dd class="invisible">9</dd>
-    <dt>q10</dt>
-    <dd class="invisible">10</dd>
-</dl>
-<button class="change">yellowli</button>
-
-<h3 id="national-parks-heading">parks1</h3>
-<ul id="national-parks">
-    <li>p</li>
-    <li>a</li>
-    <li>r</li>
-    <li>k</li>
-    <li>s</li>
-</ul>
-<h3>parks2</h3>
-<ul id="state-parks-texas">
-    <li>p</li>
-    <li>a</li>
-    <li>r</li>
-    <li>k</li>
-    <li>s</li>
-</ul>
-<h3>parks3</h3>
-<ul id="state-parks-newMexico">
-    <li>p</li>
-    <li>a</li>
-    <li>r</li>
-    <li>k</li>
-    <li>s</li>
-</ul>
-<script>
-    $('dt').click(function () {
-        $(this).next().toggleClass('invisible').css('background-color', 'salmon');
-    });
-    $('.change').click(function () {
-        $('ul').each(function () {
-            $(this).children().last().css('background-color', 'yellow');
-        });
-    });
-    $('h3').click(function () {
-        $(this).next().slideToggle().css('font-weight', 'bold');
-    });
-    $('li').click(function () {
-        $(this).parent().children().first().css('color', 'blue');
-    });
-    $('span').click(function () {
-        $(this).parent().hide()
-    });
-    $('ul').hide();
-    $('h2').hide();
-    setTimeout(function () {
-        $('h2').fadeIn(5000);
-    }, 5000)
-</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
 </html>
