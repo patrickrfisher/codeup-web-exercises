@@ -15,8 +15,8 @@
  *
  * Can you refactor your code to use functions?
  */
-var txt;
-var r = confirm("Enter a NUMBER TO BEGIN");
+let txt;
+let r = confirm("Enter a NUMBER TO BEGIN");
 if (r) {
     txt = "You pressed OK!";
 } else {
@@ -26,29 +26,29 @@ if (r) {
 confirm("Enter a NUMBER TO START THE GAME\nYOU MUST ONLY CHOOSE OK! EVEN IF YOU CANCEL IT WONT MATTER ITS TO LATE.");
 
 
-var userNumber = parseInt(prompt("ENTER ANY NUMBER IF YOU DARE"));
+let userNumber = parseInt(prompt("ENTER ANY NUMBER IF YOU DARE"));
 
-if(userNumber == undefined){
+if (userNumber == undefined) {
     userNumber = parseInt(prompt("Please enter a ODD number instead!"));
-} else if (userNumber %2 == 0 && userNumber >= 0) {
+} else if (userNumber % 2 == 0 && userNumber >= 0) {
     alert(userNumber + " THAT IS A EVEN NUMBER, I ARE GENIUS!");
     alert(userNumber + " I bet you didnt know it was a POSITIVE NUMBER");
-    var addEven = userNumber + 100;
+    let addEven = userNumber + 100;
     alert(userNumber + " + 100 = " + addEven);
-} else if(userNumber %2 == 0 && userNumber < 0){
+} else if (userNumber % 2 == 0 && userNumber < 0) {
     alert(userNumber + " BEEP BOOP BEEP IT IS A EVEN NUMBER");
     alert(userNumber + " YOU HAVE GONE NEGATIVE SIR");
-    var addENeg = userNumber + 100;
+    let addENeg = userNumber + 100;
     alert(userNumber + " + 100 = " + addENeg);
-} else if(userNumber %2 > 0 && userNumber > 0){
+} else if (userNumber % 2 > 0 && userNumber > 0) {
     alert(userNumber + " WELL AINT YOU A ODD NUMBER");
     alert(userNumber + " I AM SURE THAT IS A POSITIVE NUMBER");
-    var addOdd = userNumber + 100;
-    alert(userNumber + " + 100 = "+ addOdd);
+    let addOdd = userNumber + 100;
+    alert(userNumber + " + 100 = " + addOdd);
 } else {
     alert(userNumber + " BEEP BOOP BEEP IS A ODD NUMBER BOOP");
     alert(userNumber + " WHY SO NEGATIVE SIR");
-    var addNOdd = userNumber + 100;
+    let addNOdd = userNumber + 100;
     alert(userNumber + " + 100 = " + addNOdd);
 }
 
@@ -77,21 +77,21 @@ if(userNumber == undefined){
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color everytime the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-function analyzeColor(colorID){
-    if(colorID === "blue"){
+function analyzeColor(colorID) {
+    if (colorID === "blue") {
         return (colorID + "I'm blue (if I was green I would die)");
-    } else if(colorID === "red"){
+    } else if (colorID === "red") {
         return ("Ninety nine red balloons" + colorID);
-    } else if(colorID === "cyan"){
+    } else if (colorID === "cyan") {
         return (colorID + " vanishing like a cyan sunday");
-    } else{
+    } else {
         return ("ERROR ERROR ERROR I HAVE NO RECOLLECTION OF THAT COLOR OR DATA OF IT PREPARE FOR DATA EXTRACTION");
     }
 }
 
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+let randomColor = colors[Math.floor(Math.random() * colors.length)];
 console.log(randomColor);
 
 function anaylzeColor(randomColor) {
@@ -111,7 +111,7 @@ anaylzeColor(randomColor);
  * Refactor your above function to use a switch-case statement
  */
 
-switch(randomColor){
+switch (randomColor) {
     case "blue":
         alert("I'm blue (if I was green I would die)" + randomColor);
         break;
@@ -139,7 +139,7 @@ switch(randomColor){
  * function to show it to the user.
  */
 
-var colorChoice = prompt("Please choose a color: ReD bLuE cYaN");
+let colorChoice = prompt("Please choose a color: ReD bLuE cYaN");
 
 alert(analyzeColor(colorChoice));
 
@@ -165,10 +165,10 @@ alert(analyzeColor(colorChoice));
  * return value.
  */
 
-function getLucky(luckyNumber, totalCost){
+function getLucky(luckyNumber, totalCost) {
     var discount;
     var discountCost;
-    switch(luckyNumber){
+    switch (luckyNumber) {
         case '1':
             discount = 0.1;
             break;
@@ -190,7 +190,7 @@ function getLucky(luckyNumber, totalCost){
     }
     discountCost = (totalCost) - (totalCost * discount);
     var savings = totalCost - discountCost;
-    alert("Well look at you, the final cost of your bill is $" + discountCost+ "! With the Savings catcher app you have saved $ " + savings + "!");
+    alert("Well look at you, the final cost of your bill is $" + discountCost + "! With the Savings catcher app you have saved $ " + savings + "!");
 }
 
 var userLuckyNumber = prompt("Enter your lucky number from 0-5");
@@ -212,7 +212,7 @@ var randomLuckyNumber = Math.floor(Math.random() * 6);
 
 alert("Let's try again with a random lucky number!");
 
-alert("Your random number is " +randomLuckyNumber);
+alert("Your random number is " + randomLuckyNumber);
 
 
 userPrice = prompt("How much is your bill?");
