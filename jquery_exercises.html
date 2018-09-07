@@ -47,7 +47,18 @@
             $('p').css('font-size', '18px')
         }
     );
-    $('li').hover(
+    $('#1').hover(
+        function (){
+            $(this).css('color', 'red');
+        },
+        function (){
+            $(this).css({
+                'color': 'black',
+                // 'font-size': '20px'
+            });
+        }
+    )
+    $('#2').hover(
         function (){
             $(this).css('color', 'red');
         },
