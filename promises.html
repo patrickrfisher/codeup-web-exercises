@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promises</title>
+</head>
+<body>
+<h1>Jvs Promises Intro</h1>
+<p>Promises are a way of designating whether or not.</p>
+
+<ol>
+    <li>Pending</li>
+    <li>Accepted</li>
+    <li>Rejected</li>
+</ol>
+<script>
+    const myPromise = new Promise((resolve, reject) => {
+        if (Math.random() > 0.5) {
+            resolve();
+        } else {
+            reject();
+        }
+    });
+</script>
+</body>
+</html>
