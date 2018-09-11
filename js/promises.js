@@ -13,7 +13,6 @@
 // fetch(url, {headers: {'Authorization': 'token YOUR_TOKEN_HERE'}})
 // Create a function that accepts a github username, and returns a promise that resolves with the date of the last commit that user made. Reference the github api documentation to achieve this.
 "use strict";
-"use strict";
 
 // let wait = num =>{
 //     let promise = new Promise((resolve, reject) => {});
@@ -42,7 +41,8 @@ function wait(num){
 wait(1000).then(() => console.log('You\'ll see this after 1 second'));
 wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
 // function getLastCommit () {
-//     fetch('GET /users/:username/events/public', {headers: {'Authorization': '21088f6ecf7e9d375e69c9251e6d3f8795eb5152'}})
+//     var fetch = require("node-fetch");
+//     fetch('https://api.github.com/users/', {headers: {'Authorization': 'd7cc4635712ac9c52005134300e56e338b36b738'}})
 //         .then(response => response.json())
 //         // .then((users) => console.log(users.map(user => user.created_at)))
 //         .then((users) => console.log(users[0].created_at))
@@ -50,10 +50,19 @@ wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
 // }
 // getLastCommit();
 
+// const lastPushToGithub = (username) => {
+//     var fetch = require("node-fetch");
+//     return fetch('https://api.github.com/users/' + username + '/events', {headers: {'Authorization': 'token d7cc4635712ac9c52005134300e56e338b36b738'}})
+// };
+// lastPushToGithub('patrickrfisher')
+//     .then(response => response.json())
+//     .then(events => events.filter(event => event.type === "PushEvent"))
+//     .then(data => console.log(data["0"].created_at))
+//     .catch(error => console.error(error));
 const lastPushToGithub = (username) => {
-    return fetch('https://api.github.com/users/' + username + '/events', {headers: {'Authorization': 'token d7cc4635712ac9c52005134300e56e338b36b738'}})
+    return fetch('https://api.github.com/users/' + username + '/events', {headers: {'Authorization': 'token 546736fab51a43e68b1698e199fa662a1a04a4f0'}})
 };
-lastPushToGithub('tylor-pelletier')
+lastPushToGithub('patrickrfisher')
     .then(response => response.json())
     .then(events => events.filter(event => event.type === "PushEvent"))
     .then(data => console.log(data["0"].created_at))
