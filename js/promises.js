@@ -31,13 +31,20 @@
 
 
 
-function wait(num){
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve();
-        }, num);
-    });
-}
+// function wait(num){
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve();
+//         }, num);
+//     });
+// }
+let wait=ms=>{
+    return new Promise((resolve)=>{
+            setTimeout(()=>{
+                resolve("we're done")
+            },ms)
+    })
+};
 wait(1000).then(() => console.log('You\'ll see this after 1 second'));
 wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
 // function getLastCommit () {
@@ -59,11 +66,21 @@ wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
 //     .then(events => events.filter(event => event.type === "PushEvent"))
 //     .then(data => console.log(data["0"].created_at))
 //     .catch(error => console.error(error));
-const lastPushToGithub = (username) => {
-    return fetch('https://api.github.com/users/' + username + '/events', {headers: {'Authorization': 'token 546736fab51a43e68b1698e199fa662a1a04a4f0'}})
-};
-lastPushToGithub('patrickrfisher')
-    .then(response => response.json())
-    .then(events => events.filter(event => event.type === "PushEvent"))
-    .then(data => console.log(data["0"].created_at))
-    .catch(error => console.error(error));
+// const lastPushToGithub = (username) => {
+//     return fetch('https://api.github.com/users/' + username + '/events', {headers: {'Authorization': 'token 546736fab51a43e68b1698e199fa662a1a04a4f0'}})
+// };
+// lastPushToGithub('patrickrfisher')
+//     .then(response => response.json())
+//     .then(events => events.filter(event => event.type === "PushEvent"))
+//     .then(data => console.log(data["0"].created_at))
+//     .catch(error => console.error(error));
+//
+//
+const getLastCommitDate=(username => {
+    const url=`https://api.github.com/users/${username}/events`;
+    fetch(url)
+        .then(data=>data.json())
+        .then((data)=>console.log(data));
+
+});
+getLastCommitDate("patrickrfisher");

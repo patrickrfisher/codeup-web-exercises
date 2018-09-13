@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>promises</title>
+    <script src="js/promises.js"></script>
 </head>
 <body>
 <script>
-    function wait(num){
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve();
-            }, num);
-        });
+    // <!--function wait(num){-->
+    //     <!--return new Promise((resolve) => {-->
+    //         <!--setTimeout(() => {-->
+    //             <!--resolve();-->
+    //         <!--}, num);-->
+    //     <!--});-->
+    // <!--}-->
+    // <!--wait(1000).then(() => console.log('You\'ll see this after 1 second'));-->
+    // <!--wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));-->
+    // <!--// function getLastCommit () {-->
+    // <!--//     fetch('GET /users/:username/events/public', {headers: {'Authorization': '21088f6ecf7e9d375e69c9251e6d3f8795eb5152'}})-->
+    // <!--//         .then(response => response.json())-->
+    // <!--//         // .then((users) => console.log(users.map(user => user.created_at)))-->
+    // <!--//         .then((users) => console.log(users[0].created_at))-->
+    // <!--//         .catch(error => console.log(error))-->
+    // <!--// }-->
+    // <!--// getLastCommit();-->
+    //
+    // <!--const lastPushToGithub = (username) => {-->
+    //     <!--return fetch('https://api.github.com/repos/patrickrfisher/codeup-web-exercises/commits' + username + '/events', {headers: {'Authorization': 'token 546736fab51a43e68b1698e199fa662a1a04a4f0'}})-->
+    // <!--};-->
+    // <!--lastPushToGithub('patrickrfisher')-->
+    //     <!--.then(response => response.json())-->
+    //     <!--.then(events => events.filter(event => event.type === "PushEvent"))-->
+    //     <!--.then(data => console.log(data["0"].created_at))-->
+    //     <!--.catch(error => console.error(error));-->
+    // <!--const fetch = require('node-fetch');-->
+    // <!--//-->
+    // <!--//-->
+    // <!--// fetch("https://api.github.com/repos/patrickrfisher/codeup-web-exercises/commits", {-->
+    // <!--//         headers: {"Authorization": "546736fab51a43e68b1698e199fa662a1a04a4f0"},-->
+    // <!--//     }-->
+    // <!--// )-->
+    // <!--//     .then(response => response.json())-->
+    // <!--//     .then(data => {-->
+    // <!--//         console.log(data);-->
+    // <!--//     })-->
+    // <!--//     .catch(error => console.error(error));-->
+    // <!--// function getLastCommit () {-->
+    // <!--//     fetch('https://api.github.com/users/patrickrfisher/events', {headers: {'Authorization': 'token 546736fab51a43e68b1698e199fa662a1a04a4f0'}})-->
+    // <!--//         .then(response => response.json())-->
+    // <!--//         .then((users) => console.log(users[0].created_at))-->
+    // <!--//         .catch(error => console.log(error))-->
+    // <!--// }-->
+    // <!--// getLastCommit();-->
+    function fib(num) {
+        if (num < 2) {
+            return num;
+        } else {
+            return fib(num - 1) + fib(num - 2)
+        }
     }
-    wait(1000).then(() => console.log('You\'ll see this after 1 second'));
-    wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
-    // function getLastCommit () {
-    //     fetch('GET /users/:username/events/public', {headers: {'Authorization': '21088f6ecf7e9d375e69c9251e6d3f8795eb5152'}})
-    //         .then(response => response.json())
-    //         // .then((users) => console.log(users.map(user => user.created_at)))
-    //         .then((users) => console.log(users[0].created_at))
-    //         .catch(error => console.log(error))
-    // }
-    // getLastCommit();
+        console.log(fib(55));
 
-    const lastPushToGithub = (username) => {
-        return fetch('https://api.github.com/repos/patrickrfisher/codeup-web-exercises/commits' + username + '/events', {headers: {'Authorization': 'token 546736fab51a43e68b1698e199fa662a1a04a4f0'}})
-    };
-    lastPushToGithub('patrickrfisher')
-        .then(response => response.json())
-        .then(events => events.filter(event => event.type === "PushEvent"))
-        .then(data => console.log(data["0"].created_at))
-        .catch(error => console.error(error));
-    const fetch = require('node-fetch');
-    //
-    //
-    // fetch("https://api.github.com/repos/patrickrfisher/codeup-web-exercises/commits", {
-    //         headers: {"Authorization": "546736fab51a43e68b1698e199fa662a1a04a4f0"},
-    //     }
-    // )
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log(data);
-    //     })
-    //     .catch(error => console.error(error));
-    // function getLastCommit () {
-    //     fetch('https://api.github.com/users/patrickrfisher/events', {headers: {'Authorization': 'token 546736fab51a43e68b1698e199fa662a1a04a4f0'}})
-    //         .then(response => response.json())
-    //         .then((users) => console.log(users[0].created_at))
-    //         .catch(error => console.log(error))
-    // }
-    // getLastCommit();
+const fibo()
+
+
 
 
 </script>
