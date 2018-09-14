@@ -39,10 +39,33 @@
 //     else return recFib (n-1)+recFib(n-2)
 // };
 // console.log(recFib(99));
-const getFib=n=>{
-    letfib=[]
-    if(n===0) fibs.push(0)
-    else if(n==1)fibs.push(1)
-    else fibs.push(getfibs[n-1]+getFibs[n-2])
-    return fibs;
-};
+// const getFib=n=>{
+//     letfib=[]
+//     if(n===0) fibs.push(0)
+//     else if(n==1)fibs.push(1)
+//     else fibs.push(getfibs[n-1]+getFibs[n-2])
+//     return fibs;
+// };
+
+let obj = {
+    name: "patrick",
+    sayHello: function(){
+        return "Hello " + obj.name;
+    }
+
+}
+obj.sayHello; //Hello patrick
+
+
+
+
+var numbers=[1,2,3];
+
+
+numbers.forEach(function(num,i){
+    return num
+    }
+
+);
+
+
